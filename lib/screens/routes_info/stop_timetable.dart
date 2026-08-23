@@ -29,7 +29,7 @@ class StopTimetableScreen extends StatelessWidget {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [Text(r.$1, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13)), Text(r.$2, style: TextStyle(color: AppColors.textMuted, fontSize: 11))],
+                        children: [Text(r.$1, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13)), Text(r.$2, style: const TextStyle(color: AppColors.textMuted, fontSize: 11))],
                       ),
                     ),
                     Text(r.$3, style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w700)),

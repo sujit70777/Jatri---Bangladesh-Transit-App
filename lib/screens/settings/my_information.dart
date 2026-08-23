@@ -20,10 +20,10 @@ class MyInformationScreen extends StatelessWidget {
             margin: const EdgeInsets.symmetric(vertical: 10),
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(color: AppColors.surfaceTint, borderRadius: BorderRadius.circular(10)),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Verified through NID authentication', style: TextStyle(color: AppColors.primaryPressed, fontWeight: FontWeight.w700, fontSize: 13)),
+                Text('Verified through NID authentication', style: TextStyle(color: AppColors.primaryPressed, fontWeight: FontWeight.w700, fontSize: 13)),
                 Text('Re-authenticate to update your information.', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
               ],
             ),
@@ -44,7 +44,7 @@ class MyInformationScreen extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [Text(label, style: TextStyle(color: AppColors.textMuted, fontSize: 12)), Text(value, style: const TextStyle(fontSize: 15))],
+          children: [Text(label, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)), Text(value, style: const TextStyle(fontSize: 15))],
         ),
       );
 
@@ -56,7 +56,7 @@ class MyInformationScreen extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text(label, style: TextStyle(color: AppColors.textMuted, fontSize: 12)), const Text('Edit', style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w600))],
+              children: [Text(label, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)), const Text('Edit', style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w600))],
             ),
             Text(value, style: const TextStyle(fontSize: 15)),
           ],

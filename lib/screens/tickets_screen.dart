@@ -55,7 +55,7 @@ class _BuyTicketLanding extends StatelessWidget {
                   children: [
                     Text(t.title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 16)),
                     const SizedBox(height: 4),
-                    Text(t.subtitle, style: TextStyle(color: AppColors.surfaceTint, fontSize: 12)),
+                    Text(t.subtitle, style: const TextStyle(color: AppColors.surfaceTint, fontSize: 12)),
                   ],
                 ),
               ),
@@ -79,7 +79,7 @@ class TicketPurchaseScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(ticketType.subtitle, style: TextStyle(color: AppColors.textMuted)),
+            Text(ticketType.subtitle, style: const TextStyle(color: AppColors.textMuted)),
             const Spacer(),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -116,7 +116,7 @@ class PaymentSuccessScreen extends StatelessWidget {
               const SizedBox(height: 16),
               const Text('Ticket purchased', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w700)),
               const SizedBox(height: 8),
-              Text('Your ticket is active and ready to use.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textMuted)),
+              const Text('Your ticket is active and ready to use.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textMuted)),
               const SizedBox(height: 24),
               SizedBox(
                 width: double.infinity,
@@ -144,11 +144,11 @@ class _YourTickets extends StatelessWidget {
         const Center(child: Text('124446 67471345')),
         const SizedBox(height: 20),
         const Divider(),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [Text('Fare', style: TextStyle(color: AppColors.textMuted, fontSize: 12)), Text('Tk 60', style: TextStyle(fontWeight: FontWeight.w700))]),
-            Column(crossAxisAlignment: CrossAxisAlignment.end, children: const [Text('Customer group', style: TextStyle(color: AppColors.textMuted, fontSize: 12)), Text('Adult', style: TextStyle(fontWeight: FontWeight.w700))]),
+            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Text('Fare', style: TextStyle(color: AppColors.textMuted, fontSize: 12)), Text('Tk 60', style: TextStyle(fontWeight: FontWeight.w700))]),
+            Column(crossAxisAlignment: CrossAxisAlignment.end, children: [Text('Customer group', style: TextStyle(color: AppColors.textMuted, fontSize: 12)), Text('Adult', style: TextStyle(fontWeight: FontWeight.w700))]),
           ],
         ),
         const SizedBox(height: 20),

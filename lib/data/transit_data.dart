@@ -1,7 +1,7 @@
-/// Real transit data sourced from DMTCL's published MRT Line 6 schedule
-/// and BRTA's fare list, built earlier in the Jatri project.
-/// See /backend/gtfs in the project repo for the full GTFS feeds this
-/// prototype's mock data is drawn from.
+// Real transit data sourced from DMTCL's published MRT Line 6 schedule
+// and BRTA's fare list, built earlier in the Jatri project.
+// See /backend/gtfs in the project repo for the full GTFS feeds this
+// prototype's mock data is drawn from.
 
 class Station {
   final String id;

@@ -19,7 +19,7 @@ class ServiceAreaScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Dhaka Metro service area is divided into zones by distance from the city center.', style: TextStyle(color: AppColors.textMuted)),
+                    const Text('Dhaka Metro service area is divided into zones by distance from the city center.', style: TextStyle(color: AppColors.textMuted)),
                     const SizedBox(height: 12),
                     _zoneRow('Z1', 'Uttara \u2013 Mirpur corridor'),
                     _zoneRow('Z2', 'Agargaon \u2013 Farmgate'),
@@ -73,7 +73,7 @@ class DisruptionsScreen extends StatelessWidget {
                 decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [Text(i.$1, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)), const SizedBox(height: 4), Text(i.$2, style: TextStyle(color: AppColors.textMuted, fontSize: 11))],
+                  children: [Text(i.$1, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)), const SizedBox(height: 4), Text(i.$2, style: const TextStyle(color: AppColors.textMuted, fontSize: 11))],
                 ),
               ),
           ],
@@ -95,7 +95,7 @@ class ComparePricesScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Check ticket prices by customer group and route.', style: TextStyle(color: AppColors.textMuted)),
+            const Text('Check ticket prices by customer group and route.', style: TextStyle(color: AppColors.textMuted)),
             const SizedBox(height: 14),
             const MockField(label: 'Customer group', placeholder: 'Adult'),
             const SizedBox(height: 14),
@@ -121,7 +121,7 @@ class MyRoutesStopsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          Text('Get alerts and quick timetables for the routes and stops you use most.', style: TextStyle(color: AppColors.textMuted)),
+          const Text('Get alerts and quick timetables for the routes and stops you use most.', style: TextStyle(color: AppColors.textMuted)),
           const SectionLabel('My routes'),
           _chip('MRT Line 6', 'Uttara \u2013 Motijheel', AppColors.modeMetro),
           const SizedBox(height: 8),

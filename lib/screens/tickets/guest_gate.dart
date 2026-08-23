@@ -21,7 +21,7 @@ class GuestGateScreen extends StatelessWidget {
               const SizedBox(height: 16),
               const Text('Create an account to continue', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700), textAlign: TextAlign.center),
               const SizedBox(height: 10),
-              Text(
+              const Text(
                 'Season and multi-journey tickets require an account so we can confirm your discount eligibility and keep your ticket safe if you switch phones.',
                 style: TextStyle(color: AppColors.textMuted),
                 textAlign: TextAlign.center,
@@ -45,7 +45,7 @@ class GuestGateScreen extends StatelessWidget {
               const SizedBox(height: 10),
               TextButton(
                 onPressed: () => Navigator.of(context).popUntil((r) => r.isFirst),
-                child: Text('Choose a different ticket type', style: TextStyle(color: AppColors.textMuted)),
+                child: const Text('Choose a different ticket type', style: TextStyle(color: AppColors.textMuted)),
               ),
             ],
           ),

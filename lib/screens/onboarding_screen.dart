@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
               const SizedBox(height: 14),
               const Text('Jatri', style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.w700)),
               const SizedBox(height: 6),
-              Text('Bangladesh, on the move', style: TextStyle(color: AppColors.surfaceTint, fontSize: 13)),
+              const Text('Bangladesh, on the move', style: TextStyle(color: AppColors.surfaceTint, fontSize: 13)),
             ],
           ),
         ),
@@ -47,7 +47,7 @@ class OnboardingScreen extends StatelessWidget {
                   children: [
                     const Text('Every ride, one app', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700), textAlign: TextAlign.center),
                     const SizedBox(height: 10),
-                    Text(
+                    const Text(
                       'Metro, bus, train and launch routes across Bangladesh, planned in seconds.',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: AppColors.textMuted, fontSize: 13),

@@ -24,7 +24,7 @@ class CreateAccountScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(10)),
-              child: Text(
+              child: const Text(
                 'You can buy single and day tickets as a guest without an account. Creating an account unlocks season tickets, saved routes, and personalized alerts.',
                 style: TextStyle(color: AppColors.textMuted, fontSize: 12),
               ),

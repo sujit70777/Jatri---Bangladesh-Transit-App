@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../widgets/common.dart';
 import '../../routes.dart';
+import 'legal_pages.dart';
 
 class SettingsHubScreen extends StatelessWidget {
   const SettingsHubScreen({super.key});

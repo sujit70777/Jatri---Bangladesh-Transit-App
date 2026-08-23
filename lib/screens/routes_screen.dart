@@ -20,14 +20,14 @@ class RoutesScreen extends StatelessWidget {
                 children: [
                   const Text('Where to?', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700)),
                   const SizedBox(height: 14),
-                  _FieldRow(icon: Icons.circle, color: AppColors.primary, label: 'Your current location'),
+                  const _FieldRow(icon: Icons.circle, color: AppColors.primary, label: 'Your current location'),
                   const SizedBox(height: 8),
                   GestureDetector(
                     onTap: () => Navigator.of(context).pushNamed(AppRoutes.searchAutocomplete),
-                    child: _FieldRow(icon: Icons.location_on, color: AppColors.alert, label: 'Select destination'),
+                    child: const _FieldRow(icon: Icons.location_on, color: AppColors.alert, label: 'Select destination'),
                   ),
                   const SizedBox(height: 16),
-                  Text('Quick places', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+                  const Text('Quick places', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
                   const SizedBox(height: 8),
                   Row(
                     children: [
@@ -36,14 +36,14 @@ class RoutesScreen extends StatelessWidget {
                           onTap: () => Navigator.of(context).push(
                             MaterialPageRoute(builder: (_) => const RouteResultsScreen(from: 'Uttara Center', to: 'Motijheel')),
                           ),
-                          child: _QuickChip(icon: Icons.home, label: 'Home'),
+                          child: const _QuickChip(icon: Icons.home, label: 'Home'),
                         ),
                       ),
                       const SizedBox(width: 8),
                       Expanded(
                         child: GestureDetector(
                           onTap: () => Navigator.of(context).pushNamed(AppRoutes.savePlace),
-                          child: _QuickChip(icon: Icons.add, label: 'Add place'),
+                          child: const _QuickChip(icon: Icons.add, label: 'Add place'),
                         ),
                       ),
                     ],
@@ -78,7 +78,7 @@ class _FieldRow extends StatelessWidget {
         children: [
           Icon(icon, size: 14, color: color),
           const SizedBox(width: 10),
-          Text(label, style: TextStyle(color: AppColors.textMuted)),
+          Text(label, style: const TextStyle(color: AppColors.textMuted)),
         ],
       ),
     );
@@ -137,7 +137,7 @@ class RouteResultsScreen extends StatelessWidget {
                       child: Text(it.badge, style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w700, fontSize: 12)),
                     ),
                     const SizedBox(width: 8),
-                    Text('${it.minutes} min \u00b7 Tk ${it.fareTaka}', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+                    Text('${it.minutes} min \u00b7 Tk ${it.fareTaka}', style: const TextStyle(color: AppColors.textMuted, fontSize: 12)),
                   ]),
                   const SizedBox(height: 8),
                   Row(children: [
@@ -230,9 +230,9 @@ class _StepTile extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(time, style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+                  Text(time, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)),
                   Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
-                  Text(subtitle, style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+                  Text(subtitle, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)),
                 ],
               ),
             ),

@@ -26,7 +26,7 @@ class NotificationsScreen extends StatelessWidget {
         decoration: const BoxDecoration(border: Border(bottom: BorderSide(color: AppColors.border))),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [Text(label), Switch(value: value, onChanged: (_) {}, activeColor: AppColors.primary)],
+          children: [Text(label), Switch(value: value, onChanged: (_) {}, activeThumbColor: AppColors.primary)],
         ),
       );
 }
@@ -47,10 +47,10 @@ class FeedbackScreen extends StatelessWidget {
             const SizedBox(height: 14),
             const MockField(label: 'Your message', placeholder: 'Tell us what happened...'),
             const SizedBox(height: 14),
-            Row(children: [
-              const Icon(Icons.check_box, color: AppColors.primary, size: 18),
-              const SizedBox(width: 8),
-              const Text('I would like a response', style: TextStyle(fontSize: 13)),
+            const Row(children: [
+              Icon(Icons.check_box, color: AppColors.primary, size: 18),
+              SizedBox(width: 8),
+              Text('I would like a response', style: TextStyle(fontSize: 13)),
             ]),
             const Spacer(),
             SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Send feedback'))),
@@ -76,9 +76,9 @@ class PenaltyFareScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(color: const Color(0xFFFCEBEA), borderRadius: BorderRadius.circular(10)),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text('Remember to activate your ticket', style: TextStyle(color: AppColors.alert, fontWeight: FontWeight.w700, fontSize: 13)),
                   SizedBox(height: 4),
                   Text("If you don't have a valid ticket, you'll be charged a Tk 1,000 penalty fare plus the price of a single ticket.", style: TextStyle(fontSize: 12)),
@@ -86,7 +86,7 @@ class PenaltyFareScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 14),
-            Text(
+            const Text(
               'This applies to MRT Line 6, where gate enforcement is in place. Private bus fares are still collected by conductors and are not enforced through the app.',
               style: TextStyle(color: AppColors.textMuted),
             ),

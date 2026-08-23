@@ -24,9 +24,9 @@ class TicketQuizScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(color: AppColors.surfaceTint, borderRadius: BorderRadius.circular(10)),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [Text('Recommended for you', style: TextStyle(color: AppColors.textMuted, fontSize: 11)), Text('Single ticket \u2014 Tk 30', style: TextStyle(fontWeight: FontWeight.w700))],
+                children: [Text('Recommended for you', style: TextStyle(color: AppColors.textMuted, fontSize: 11)), Text('Single ticket \u2014 Tk 30', style: TextStyle(fontWeight: FontWeight.w700))],
               ),
             ),
             const SizedBox(height: 14),
@@ -98,7 +98,7 @@ class TapInScreen extends StatelessWidget {
               'Scan your bKash or Nagad QR directly at the gate or on board for instant payment. Contactless bank cards work too, if you have one, as a secondary option.',
             ),
             const SizedBox(height: 10),
-            Text('Discount tickets and season passes still require the app.', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+            const Text('Discount tickets and season passes still require the app.', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
           ],
         ),
       ),
@@ -173,7 +173,7 @@ class DiscountOverviewScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          Text('See if you qualify before you buy.', style: TextStyle(color: AppColors.textMuted)),
+          const Text('See if you qualify before you buy.', style: TextStyle(color: AppColors.textMuted)),
           const SizedBox(height: 12),
           for (final g in groups)
             Container(

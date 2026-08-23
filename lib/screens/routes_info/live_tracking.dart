@@ -27,13 +27,13 @@ class LiveTrackingScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('MRT Line 6 \u2014 live', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
-                  const SizedBox(height: 6),
+                  Text('MRT Line 6 \u2014 live', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+                  SizedBox(height: 6),
                   Text(
                     'Live tracking is available for MRT Line 6. Bus times are estimated from typical patterns, not live GPS, until operators publish real-time data.',
                     style: TextStyle(color: AppColors.textMuted, fontSize: 12),

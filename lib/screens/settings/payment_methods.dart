@@ -48,11 +48,11 @@ class PurchaseLimitsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Set a monthly spending cap to help manage your travel budget.', style: TextStyle(color: AppColors.textMuted)),
+            const Text('Set a monthly spending cap to help manage your travel budget.', style: TextStyle(color: AppColors.textMuted)),
             const SizedBox(height: 14),
             const MockField(label: 'Monthly limit (Tk)', placeholder: '2,500'),
             const SizedBox(height: 10),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: const [
+            const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
               Text('Used this month', style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
               Text('Tk 840 / Tk 2,500', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12)),
             ]),

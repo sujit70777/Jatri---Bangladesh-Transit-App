@@ -25,7 +25,7 @@ class SettingsRow extends StatelessWidget {
                   Text(title, style: TextStyle(fontSize: 14, color: danger ? AppColors.alert : AppColors.text)),
                   if (subtitle != null) ...[
                     const SizedBox(height: 2),
-                    Text(subtitle!, style: TextStyle(fontSize: 12, color: AppColors.textMuted)),
+                    Text(subtitle!, style: const TextStyle(fontSize: 12, color: AppColors.textMuted)),
                   ],
                 ],
               ),
@@ -47,7 +47,7 @@ class SectionLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16, bottom: 4),
-      child: Text(text, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textMuted)),
+      child: Text(text, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textMuted)),
     );
   }
 }
@@ -84,7 +84,7 @@ class SimpleTextScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         children: [
           for (final p in paragraphs) ...[
-            Text(p, style: TextStyle(color: AppColors.textMuted, height: 1.5)),
+            Text(p, style: const TextStyle(color: AppColors.textMuted, height: 1.5)),
             const SizedBox(height: 14),
           ],
         ],
@@ -136,7 +136,7 @@ class EmptyStateScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700), textAlign: TextAlign.center),
                       const SizedBox(height: 8),
-                      Text(description, style: TextStyle(color: AppColors.textMuted), textAlign: TextAlign.center),
+                      Text(description, style: const TextStyle(color: AppColors.textMuted), textAlign: TextAlign.center),
                     ],
                   ),
                 ),
@@ -166,13 +166,13 @@ class MockField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textMuted)),
+        Text(label, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textMuted)),
         const SizedBox(height: 6),
         Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
           decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(10)),
-          child: Text(placeholder, style: TextStyle(color: AppColors.textMuted)),
+          child: Text(placeholder, style: const TextStyle(color: AppColors.textMuted)),
         ),
       ],
     );

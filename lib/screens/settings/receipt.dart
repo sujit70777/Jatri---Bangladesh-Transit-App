@@ -45,7 +45,7 @@ class ReceiptScreen extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(l, style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+            Text(l, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)),
             Text(v, style: TextStyle(fontWeight: bold ? FontWeight.w700 : FontWeight.w600, fontSize: bold ? 14 : 12)),
           ],
         ),

@@ -11,37 +11,22 @@ import 'screens/tickets/recommended_ticket.dart';
 import 'screens/auth/create_account.dart';
 import 'screens/auth/strong_auth.dart';
 import 'screens/auth/reauth.dart';
-import 'screens/auth/student_discount.dart';
-import 'screens/auth/act_on_behalf.dart';
 
 import 'screens/routes_info/search_autocomplete.dart';
 import 'screens/routes_info/live_tracking.dart';
 import 'screens/routes_info/stop_timetable.dart';
 import 'screens/routes_info/service_area.dart';
-import 'screens/routes_info/disruptions.dart';
-import 'screens/routes_info/compare_prices.dart';
-import 'screens/routes_info/my_routes_stops.dart';
 
 import 'screens/settings/settings_hub.dart';
 import 'screens/settings/my_information.dart';
 import 'screens/settings/language.dart';
 import 'screens/settings/my_places.dart';
-import 'screens/settings/save_place.dart';
 import 'screens/settings/payment_methods.dart';
-import 'screens/settings/purchase_limits.dart';
-import 'screens/settings/purchase_history.dart';
 import 'screens/settings/receipt.dart';
 import 'screens/settings/notifications.dart';
-import 'screens/settings/feedback.dart';
-import 'screens/settings/penalty_fare.dart';
 import 'screens/settings/legal_pages.dart';
 
 import 'screens/support/ticket_quiz.dart';
-import 'screens/support/service_points.dart';
-import 'screens/support/tap_in.dart';
-import 'screens/support/app_vs_card.dart';
-import 'screens/support/safety.dart';
-import 'screens/support/discount_overview.dart';
 
 import 'screens/states/empty_states.dart';
 

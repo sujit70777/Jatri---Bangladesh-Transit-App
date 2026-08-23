@@ -12,9 +12,9 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         children: [
           const SizedBox(height: 12),
-          Row(
+          const Row(
             children: [
-              const Expanded(
+              Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -23,19 +23,19 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const CircleAvatar(radius: 20, backgroundColor: AppColors.surface),
+              CircleAvatar(radius: 20, backgroundColor: AppColors.surface),
             ],
           ),
           const SizedBox(height: 16),
           InkWell(onTap: () => Navigator.of(context).pushNamed(AppRoutes.disruptions), child: _DisruptionBanner()),
           const SizedBox(height: 16),
-          _NewsCard(
+          const _NewsCard(
             category: 'Service',
             headline: 'MRT Line 6 running at reduced frequency due to signal maintenance',
             date: '17 Aug 2026',
           ),
           const SizedBox(height: 12),
-          _NewsCard(
+          const _NewsCard(
             category: 'News',
             headline: 'Student: check our tips for obtaining a student ticket',
             date: '10 Aug 2026',
@@ -52,13 +52,13 @@ class _DisruptionBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      decoration: BoxDecoration(border: Border.symmetric(horizontal: BorderSide(color: AppColors.border))),
-      child: Row(
+      decoration: const BoxDecoration(border: Border.symmetric(horizontal: BorderSide(color: AppColors.border))),
+      child: const Row(
         children: [
-          const Icon(Icons.error, color: AppColors.alert, size: 18),
-          const SizedBox(width: 10),
-          const Expanded(child: Text('Changes and disruptions', style: TextStyle(fontWeight: FontWeight.w600))),
-          const Icon(Icons.chevron_right, color: AppColors.textMuted),
+          Icon(Icons.error, color: AppColors.alert, size: 18),
+          SizedBox(width: 10),
+          Expanded(child: Text('Changes and disruptions', style: TextStyle(fontWeight: FontWeight.w600))),
+          Icon(Icons.chevron_right, color: AppColors.textMuted),
         ],
       ),
     );
@@ -85,11 +85,11 @@ class _NewsCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(category, style: TextStyle(color: AppColors.textMuted, fontSize: 12)),
+                Text(category, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)),
                 const SizedBox(height: 4),
                 Text(headline, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 15)),
                 const SizedBox(height: 4),
-                Text(date, style: TextStyle(color: AppColors.textMuted, fontSize: 11)),
+                Text(date, style: const TextStyle(color: AppColors.textMuted, fontSize: 11)),
               ],
             ),
           ),

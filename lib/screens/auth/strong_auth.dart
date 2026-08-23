@@ -15,12 +15,12 @@ class StrongAuthScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'NID verification confirms your identity using your Bangladesh National ID number and a one-time SMS code, so we can apply the correct fare and discounts to your account.',
                 style: TextStyle(color: AppColors.textMuted),
               ),
               const SizedBox(height: 16),
-              Text('Verify using', style: TextStyle(color: AppColors.textMuted, fontSize: 12, fontWeight: FontWeight.w600)),
+              const Text('Verify using', style: TextStyle(color: AppColors.textMuted, fontSize: 12, fontWeight: FontWeight.w600)),
               const SizedBox(height: 8),
               _method('NID verification', 'NID number + SMS OTP', selected: true),
               _method('Mobile banking KYC', 'bKash, Nagad verified identity', selected: false),
@@ -50,7 +50,7 @@ class StrongAuthScreen extends StatelessWidget {
           const SizedBox(width: 12),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text(title, style: const TextStyle(fontWeight: FontWeight.w600)), Text(sub, style: TextStyle(fontSize: 11, color: AppColors.textMuted))],
+            children: [Text(title, style: const TextStyle(fontWeight: FontWeight.w600)), Text(sub, style: const TextStyle(fontSize: 11, color: AppColors.textMuted))],
           ),
         ],
       ),

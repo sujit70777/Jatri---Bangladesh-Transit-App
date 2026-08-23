@@ -37,7 +37,7 @@ class BuyTicketLandingScreen extends StatelessWidget {
                       children: [
                         Text(t.title, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 16)),
                         const SizedBox(height: 4),
-                        Text(t.subtitle, style: TextStyle(color: AppColors.surfaceTint, fontSize: 12)),
+                        Text(t.subtitle, style: const TextStyle(color: AppColors.surfaceTint, fontSize: 12)),
                       ],
                     ),
                   ),
@@ -86,7 +86,7 @@ class TicketPurchaseScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(type.subtitle, style: TextStyle(color: AppColors.textMuted)),
+              Text(type.subtitle, style: const TextStyle(color: AppColors.textMuted)),
               const Spacer(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -145,7 +145,7 @@ class PaymentMethodScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(m.$1, style: const TextStyle(fontWeight: FontWeight.w600)),
-                          if (m.$2 != null) Text(m.$2!, style: TextStyle(fontSize: 11, color: AppColors.textMuted)),
+                          if (m.$2 != null) Text(m.$2!, style: const TextStyle(fontSize: 11, color: AppColors.textMuted)),
                         ],
                       ),
                     ],
@@ -197,7 +197,7 @@ class DiscountGroupScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(g.$1, style: const TextStyle(fontWeight: FontWeight.w600)),
-                          Text(g.$2, style: TextStyle(fontSize: 11, color: AppColors.textMuted)),
+                          Text(g.$2, style: const TextStyle(fontSize: 11, color: AppColors.textMuted)),
                         ],
                       ),
                     ],
@@ -232,12 +232,12 @@ class TicketCodeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Have a code from your employer, school, or a promotion? Redeem it here.', style: TextStyle(color: AppColors.textMuted)),
+              const Text('Have a code from your employer, school, or a promotion? Redeem it here.', style: TextStyle(color: AppColors.textMuted)),
               const SizedBox(height: 16),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                 decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(10)),
-                child: Text('Enter code', style: TextStyle(color: AppColors.textMuted)),
+                child: const Text('Enter code', style: TextStyle(color: AppColors.textMuted)),
               ),
               const Spacer(),
               SizedBox(
@@ -265,12 +265,12 @@ class BuyForFriendScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('You must be travelling together. Their ticket will show on your phone.', style: TextStyle(color: AppColors.textMuted)),
+              const Text('You must be travelling together. Their ticket will show on your phone.', style: TextStyle(color: AppColors.textMuted)),
               const SizedBox(height: 16),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
                 decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(10)),
-                child: Text("Friend's name (optional)", style: TextStyle(color: AppColors.textMuted)),
+                child: const Text("Friend's name (optional)", style: TextStyle(color: AppColors.textMuted)),
               ),
               const Spacer(),
               SizedBox(
@@ -301,7 +301,7 @@ class PaymentSuccessScreen extends StatelessWidget {
               const SizedBox(height: 16),
               const Text('Ticket purchased', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w700)),
               const SizedBox(height: 8),
-              Text('Your ticket is active and ready to use.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textMuted)),
+              const Text('Your ticket is active and ready to use.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.textMuted)),
               const SizedBox(height: 24),
               SizedBox(
                 width: double.infinity,
@@ -335,7 +335,7 @@ class QrGuideScreen extends StatelessWidget {
                 const SizedBox(height: 16),
                 const Text('Show your ticket to the reader', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700), textAlign: TextAlign.center),
                 const SizedBox(height: 10),
-                Text(
+                const Text(
                   "Hold your phone with the QR code facing the reader until it beeps green. Keep the app in its default light theme \u2014 dark mode can't be scanned.",
                   style: TextStyle(color: AppColors.textMuted),
                   textAlign: TextAlign.center,

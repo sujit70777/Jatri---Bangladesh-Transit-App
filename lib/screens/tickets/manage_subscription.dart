@@ -57,7 +57,7 @@ class ManageSubscriptionScreen extends StatelessWidget {
         padding: const EdgeInsets.only(top: 6),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [Text(l, style: TextStyle(color: AppColors.textMuted, fontSize: 12)), Text(v, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 12))],
+          children: [Text(l, style: const TextStyle(color: AppColors.textMuted, fontSize: 12)), Text(v, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 12))],
         ),
       );
 }
@@ -78,11 +78,11 @@ class CancelSubscriptionScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(color: const Color(0xFFFCEBEA), borderRadius: BorderRadius.circular(10)),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Your ticket stays active until it expires', style: TextStyle(color: AppColors.alert, fontWeight: FontWeight.w700, fontSize: 13)),
-                    const SizedBox(height: 4),
+                    Text('Your ticket stays active until it expires', style: TextStyle(color: AppColors.alert, fontWeight: FontWeight.w700, fontSize: 13)),
+                    SizedBox(height: 4),
                     Text(
                       "Cancelling stops future renewals. Your current season ticket remains valid until 2 Sep 2026 \u2014 you won't be charged again after that.",
                       style: TextStyle(color: AppColors.textMuted, fontSize: 12),
